@@ -1,0 +1,8 @@
+<module rename-to="pusher_client">
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.gwt.rpc.RPC"/>
+    <inherits name="com.google.web.bindery.autobean.AutoBean"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    
+    
+</module>

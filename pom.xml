@@ -6,12 +6,13 @@
   <groupId>com.somersi.pusher</groupId>
   <artifactId>pusher-gwt-client</artifactId>
   <name>Pusher Java GWT Client Library</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   
   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    
-    <gwt.version>2.5.1</gwt.version>
+    <gwt.version>2.9.0</gwt.version>
   </properties>
 
   <developers>
@@ -38,6 +39,20 @@
         </includes>
       </resource>
     </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <dependencies>
